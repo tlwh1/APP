@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube 정보 가져오기</title>
+</head>
+<body>
+    <h1>YouTube 비디오 정보 가져오기</h1>
+    <form method="POST">
+        <input type="text" name="url" placeholder="YouTube URL을 입력하세요" required>
+        <button type="submit">정보 가져오기</button>
+    </form>
+
+    {% if video_info %}
+        <h2>비디오 정보</h2>
+        {% if video_info.error %}
+            <p>오류: {{ video_info.error }}</p>
+        {% else %}
+            <p><strong>제목:</strong> {{ video_info.title }}</p>
+            <p><strong>설명:</strong> {{ video_info.description }}</p>
+            <p><strong>업로더:</strong> {{ video_info.uploader }}</p>
+            <p><strong>게시일:</strong> {{ video_info.upload_date }}</p>
+            <p><strong>길이:</strong> {{ video_info.duration }}초</p>
+            <p><strong>뷰 수:</strong> {{ video_info.view_count }}</p>
+        {% endif %}
+    {% endif %}
+</body>
+</html>
