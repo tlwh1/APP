@@ -1,3 +1,9 @@
+// 1. 파일 수정
+// 2. 변경 사항 확인: git status
+// 3. 변경 사항 추가: git add . (또는 git add 파일이름)
+// 4. 커밋: git commit -m "커밋 메시지"
+// 5. 푸시: git push
+
 import Image from "next/image";
 import Head from "next/head";
 import styles from "./page.module.css";
