@@ -1,3 +1,9 @@
+// 1. 변경 사항 확인: git status
+// 2. 변경 사항 추가: git add . (또는 git add 파일이름)
+// 3. 커밋: git commit -m "커밋 메시지"
+// 4. 푸시: git push
+// 5. 실행법: npm run dev
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
